@@ -27,7 +27,7 @@ class RFSender
 		{
 			if (!$override)
 			{
-				throw new Exception("Blocked RF request. Such kind of rounds can crash the target machine, please decrease it's value!");
+				throw new Exception("Blocked RF request. Such kind of rounds can overflow the target device, please decrease it's value!");
 
 				return false;
 			}
